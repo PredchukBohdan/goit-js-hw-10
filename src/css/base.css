@@ -27,3 +27,17 @@ body {
 main {
   flex-grow: 1;
 }
+nav {
+  padding: 30px 0;
+}
+nav a {
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  nav a {
+    font-size: 24px;
+  }
+}

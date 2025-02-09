@@ -11,12 +11,35 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="snackbar-page">
     <main>
       <a class="back-link" href="./index.html">Go back</a>
-      <div class="container"></div>
+      <section class="promise-generator">
+        <div class="promise-generator_container container">
+          <form class="form">
+            <label>
+              Delay (ms)
+              <input type="number" name="delay" required />
+            </label>
+
+            <fieldset>
+              <legend>State</legend>
+              <label>
+                <input type="radio" name="state" value="fulfilled" required />
+                Fulfilled
+              </label>
+              <label>
+                <input type="radio" name="state" value="rejected" required />
+                Rejected
+              </label>
+            </fieldset>
+
+            <button type="submit">Create notification</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <script type="module" src="./2-snackbar.html" defer></script>
+    <script type="module" src="./js/2-snackbar.js" defer></script>
   </body>
 </html>
